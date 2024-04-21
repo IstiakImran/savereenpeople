@@ -1,0 +1,116 @@
+/* General Styles */
+.about-us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    /* max-width: 1200px; */
+}
+
+.about-us-content {
+    flex-basis: 48%;
+    margin-bottom: 2rem;
+}
+
+.about-us-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
+    position: relative;
+}
+
+.about-us-content h1::before {
+    content: "";
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6rem;
+    height: 0.25rem;
+    background-color: #ff6600;
+    border-radius: 0.25rem;
+    transition: width 0.5s ease-in-out;
+}
+
+.about-us-content h1:hover::before {
+    width: 8rem;
+}
+
+/* Grid Styles */
+.about-us-directors,
+.about-us-shareholders,
+.about-us-landholders,
+.about-us-employees {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.about-us-grid {
+    background-color: #f8f8f8;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        margin: 10px;
+}
+
+.about-us-grid:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.about-us-grid img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.25rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.about-us-grid p {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    text-align: center;
+    color: #555;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .about-us {
+        flex-direction: column;
+    }
+
+    .about-us-content {
+        flex-basis: 100%;
+    }
+
+    .about-us-directors,
+    .about-us-shareholders,
+    .about-us-landholders,
+    .about-us-employees {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .about-us-directors,
+    .about-us-shareholders,
+    .about-us-landholders,
+    .about-us-employees {
+        grid-template-columns: 1fr;
+    }
+}
