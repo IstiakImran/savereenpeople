@@ -15,6 +15,7 @@ import eleven from '/Others/11.jpg'
 import twelve from '/Others/12.jpg'
 import thirteen from '/Others/13.jpg'
 import fourteen from '/Others/14.jpg'
+import fifteen from '/Others/15.jpg'
 
 
 
@@ -114,10 +115,17 @@ const AboutUs = () => {
                     <div className='about-us-grid'>
                         <img src={seven} alt="" />
                         <p>
-                            সাভুকুন্নাহার বিথি
+                            সাবিকুন্নাহার বিথি
+                        </p>
+                    </div>
+                    <div className='about-us-grid'>
+                        <img src={fifteen} alt="" />
+                        <p>
+                            মোহাম্মদ শাহ জালাল
                         </p>
                     </div>
                 </div>
+
             </div>
             <div className='about-us-content'>
                 <h1>Employees</h1>
