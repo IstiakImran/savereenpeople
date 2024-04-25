@@ -16,6 +16,10 @@ import twelve from '/Others/12.jpg'
 import thirteen from '/Others/13.jpg'
 import fourteen from '/Others/14.jpg'
 import fifteen from '/Others/15.jpg'
+import sixteen from '/Others/16.png'
+import seventeen from '/Others/17.png'
+import eighteen from '/Others/18.png'
+
 
 
 
@@ -124,6 +128,18 @@ const AboutUs = () => {
                             মোহাম্মদ শাহ জালাল
                         </p>
                     </div>
+                    <div className='about-us-grid'>
+                        <img src={seventeen} alt="" />
+                        <p>
+                            মোহাম্মদ রফিকুল ইসলাম
+                        </p>
+                    </div>
+                    <div className='about-us-grid'>
+                        <img src={eighteen} alt="" />
+                        <p>
+                            মোছাম্মাদ সালমা আক্তার
+                        </p>
+                    </div>
                 </div>
 
             </div>
@@ -136,6 +152,13 @@ const AboutUs = () => {
                             মোহাম্মদ মাফিকুল ইসলাম
                         </p>
                     </div>
+                    <div className='about-us-grid'>
+                        <img src={sixteen} alt="" />
+                        <p>
+                            মোহাম্মদ ইউনুস হাসান
+                        </p>
+                    </div>
+
                 </div>
             </div>
 

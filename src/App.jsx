@@ -4,6 +4,7 @@ import aboutUs from "/aboutUs.jpg";
 import affortableApartment from "/affortableApartment.jpg";
 import jobOpportunity from "/jobOpportunity.jpg";
 import shareHolder from "/shareHolder.jpeg";
+import applyNow from "/applyNow.jpg";
 import { Link } from "react-router-dom";
 
 const App = () => {
@@ -25,6 +26,33 @@ const App = () => {
             <Link to="/ourprojects" className="btn btn-secondary">
               Our Projects
             </Link>
+          </div>
+        </section>
+
+        <section className="about">
+          <div className="about-image">
+            <img src={applyNow} alt="About" />
+          </div>
+          <div className="about-content">
+            <h1 style={{ fontWeight: "bold", color: "red" }}>
+              নিয়োগ বিজ্ঞপ্তি
+            </h1>
+            <br />
+            <p>
+              বাংলাদেশের সকল জেলায়, সকল থানায়, একজন করে মার্কেটিং অফিসার নিয়োগ
+              করা হবে। বেতন ৩০ থেকে ৪০ হাজার টাকা। প্রার্থীদের কে কোম্পানির
+              ইমেইলে দরখাস্ত করার জন্য আহবান করা হচ্ছে। দরখাস্তের মধ্যে মোবাইল
+              নাম্বার অবশ্যই উল্লেখ করতে হবে। যোগ্যতা এসএসসি পাশ থেকে এমএ পাস
+              পর্যন্ত। আবেদন কারিগণকে অভিজ্ঞতা এবং শিক্ষাগত যোগ্যতার উপরে
+              পথ-পদবী নির্ধারণ করা হবে।
+              <br />
+              <span>
+                Eamil:{" "}
+                <a href="mailto:savethepeopleofgreenlife@gmail.com">
+                  savethepeopleofgreenlife@gmail.com
+                </a>
+              </span>
+            </p>
           </div>
         </section>
 
@@ -149,6 +177,7 @@ const App = () => {
           </div>
         </section>
       </main>
+
       <div className="offer">
         <div>
           <h1 style={{ fontWeight: "bold", color: "red" }}>
@@ -167,12 +196,61 @@ const App = () => {
             এই জায়গার সন্ধান করে আমাদের অফিসে কাগজপত্র বা তথ্য সংগ্রহ করে
             রেখেছে। আমাদের অল্প কিছু কনসালটেন্সি ফ্রি দিলেই চলবে।
             <br />
-            <br />
             <span>
               Eamil:{" "}
               <a href="mailto:savethepeopleofgreenlife@gmail.com">
                 savethepeopleofgreenlife@gmail.com
               </a>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div className="offer">
+        <div>
+          <p>
+            আন্তর্জাতিক মানসম্পন্ন ইলেকট্রনিক্স পণ্য বিক্রয়ের জন্য । বাংলাদেশের
+            প্রত্যেকটি জেলায় একজন করে ডিলার আবশ্যক বিস্তারিত হটলাইনে জেনে নিতে
+            পারবেন।
+            <br />
+            <span>
+              Phone Number: <a href="tel:+8801533372195">01533372195</a>
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <div className="offer">
+        <div>
+          <p>
+            আন্তর্জাতিক মানের অত্যাধুনিক রাশিয়ান কোম্পানির মোবেল
+            বিক্রয়ের/মার্কেটিংয়ের জন্য বাংলাদেশের সকল জেলা হতে একজন করে ডিলার
+            আবশ্যক। বিস্তারিত হট লাইনে
+            <br />
+            <span>
+              Phone Number: <a href="tel:+8801915115851">01915115851</a>
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <div className="offer">
+        <div>
+          <p>
+            বাংলাদেশের প্রথম শ্রেণীর ওয়াশিং পাউডার। চিনি ,লবণ, চা-পাতা, পোলাওর
+            চাউল ,সেমাই, কয়েল ,মরিচের গুঁড়া ,হলুদের গুঁড়া ,যাবতীয় মসলার
+            গোড়া, ন্যাচারাল পানি, আরো অসংখ্য প্রোডাক্ট মার্কেটিং করার জন্য সারা
+            বাংলাদেশে ডিলার/এজেন্ট নিয়োগ চলছে অতিসত্বর যোগাযোগ করার জন্য হট
+            লাইন এবং ইমেইলে যোগাযোগ করার জন্য বিশেষভাবে অনুরোধ করা হলো ।<br />
+            অনুরোধক্রমে <br />
+            ব্যবস্থাপনা পরিচালক <br />
+            মোঃ মিজানুর রহমান
+            <br />
+            <span>
+              Phone Number: <a href="tel:+8801678236183">01678236183</a>
+            </span>
+            <br />
+            <span>
+              Phone Number: <a href="tel:+8801781795551">01781795551</a>
             </span>
           </p>
         </div>
