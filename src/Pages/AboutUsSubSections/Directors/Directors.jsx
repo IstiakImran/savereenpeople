@@ -5,34 +5,12 @@ import mofazzal from '/Directors/Mofazzal.png'
 import ikbal from '/Directors/Ikbal.png'
 import salimullah from '/Directors/Salimullah.png'
 import akhtar from '/Directors/Akhtar.png'
-import twenty from '/Others/20.jpg'
-
-
-
-
+import rowson from '/Directors/Rowson.jpg'
 
 const Directors = () => {
     return (
         <div className='about-us'>
-            <div className='about-us-content'>
-                <h1>Head of Foreign Affairs</h1>
-                <div className='about-us-directors'>
-                    <div className='about-us-grid'>
-                        <img src={twenty} alt="" />
-                        <p>
-                            Abdul Kader Khan (Babu)
-                        </p>
-                        <p>
-                            <small style={{ fontSize: "14px", fontWeight: "400", margin: "0" }}>Bangladesh Association International recruiting agencies(BAIRA)
-                                <br />
-                                Name of Agency:Sunway Overseas.
-                                <br />
-                                Recruiting Licence: 2323</small>
-                        </p>
-                    </div>
 
-                </div>
-            </div>
 
             <div className='about-us-content'>
                 <h1>Chairperson</h1>
@@ -66,6 +44,19 @@ const Directors = () => {
                         <img src={salimullah} alt="" />
                         <p>
                             Mohammed Salimullah
+                        </p>
+                    </div>
+                    <div className='about-us-grid'>
+                        <img src={rowson} alt="" />
+                        <p>
+                            MD. Rowson Alom
+                        </p>
+                        <p>
+                            <small style={{ fontSize: "14px", fontWeight: "400", margin: "0" }}>Former Officer in-charge (Retd.)
+                                <br />
+                                Sub-regional center,Jamalpur.
+                                <br />
+                                Bangladesh Open University.</small>
                         </p>
                     </div>
 

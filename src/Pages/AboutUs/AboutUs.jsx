@@ -42,6 +42,14 @@ const AboutUs = () => {
                             </p>
                         </div>
                     </Link>
+                    <Link to="/aboutus/gms">
+                        <div className='about-us-grid'>
+
+                            <p>
+                                GM & AGM
+                            </p>
+                        </div>
+                    </Link>
                     <Link to="/aboutus/employees">
                         <div className='about-us-grid'>
 
@@ -50,14 +58,7 @@ const AboutUs = () => {
                             </p>
                         </div>
                     </Link>
-                    <Link to="/aboutus/gms">
-                        <div className='about-us-grid'>
 
-                            <p>
-                                GM
-                            </p>
-                        </div>
-                    </Link>
 
 
                 </div>

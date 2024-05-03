@@ -52,6 +52,13 @@ const App = () => {
                   savethepeopleofgreenlife@gmail.com
                 </a>
               </span>
+              <span>
+                <br />
+                Phone Number: <a href="tel:01922343115">01922343115</a>,{" "}
+                <a href="tel:01761370492">01761370492</a>,{" "}
+                <a href="tel:01772877112">01772877112</a>,{" "}
+                <a href="tel:01783612705">01783612705</a>{" "}
+              </span>
             </p>
           </div>
         </section>
@@ -201,6 +208,13 @@ const App = () => {
               <a href="mailto:savethepeopleofgreenlife@gmail.com">
                 savethepeopleofgreenlife@gmail.com
               </a>
+            </span>
+            <br />
+            <span>
+              Phone Number: <a href="tel:01922343115">01922343115</a>,{" "}
+              <a href="tel:01761370492">01761370492</a>,{" "}
+              <a href="tel:01772877112">01772877112</a>,{" "}
+              <a href="tel:01783612705">01783612705</a>{" "}
             </span>
           </p>
         </div>
