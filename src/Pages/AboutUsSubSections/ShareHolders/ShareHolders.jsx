@@ -9,6 +9,7 @@ import eleven from '/Others/11.jpg'
 import twelve from '/Others/12.jpg'
 import thirteen from '/Others/13.jpg'
 import fourteen from '/Others/14.jpg'
+import sixteen from '/Others/16.png'
 
 
 
@@ -68,6 +69,12 @@ const ShareHolders = () => {
                         <img src={fourteen} alt="" />
                         <p>
                             মোঃ নুরুন্নবী সামদানী
+                        </p>
+                    </div>
+                    <div className='about-us-grid'>
+                        <img src={sixteen} alt="" />
+                        <p>
+                            মোহাম্মদ ইউনুস হাসান
                         </p>
                     </div>
 
