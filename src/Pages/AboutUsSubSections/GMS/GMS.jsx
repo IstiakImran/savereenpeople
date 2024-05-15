@@ -1,8 +1,10 @@
 
 import React from 'react';
 import "./GMS.css";
-import twentytwo from '/Others/22.jpg'
+
 import twentyeight from '/Others/28.jpg'
+import twentynine from '/Others/29.jpg'
+import six from '/Others/6.jpg'
 
 
 const GMs = () => {
@@ -20,6 +22,12 @@ const GMs = () => {
                                 মোহাম্মদ মকবুল হোসেন
                             </p>
                         </div>
+                        <div className='about-us-grid'>
+                            <img src={twentynine} alt="" />
+                            <p>
+                            মোঃ সহিদুল ইসলাম 
+                            </p>
+                        </div>
 
 
 
@@ -28,14 +36,30 @@ const GMs = () => {
                 <div className='about-us-content'>
                     <h1>খুলনা</h1>
                     <div className='about-us-directors'>
-                        <div className='about-us-grid'>
-                            <img src={twentytwo} alt="" />
+                    <div className='about-us-grid'>
+                        <img src={six} alt="" />
+                        <p>
+                            মোহাম্মদ মাফিকুল ইসলাম
+                        </p>
+                    </div>
+
+                    </div>
+                </div>
+                <div className='about-us-content'>
+                    <h1>ময়মনসিংহ</h1>
+                    <div className='about-us-directors'>
+                    <div className='about-us-grid'>
+                            <img src={twentyeight} alt="" />
                             <p>
-                                মোহাম্মদ সাহাজি কামাল টিপু
+                                মোহাম্মদ মকবুল হোসেন
                             </p>
                         </div>
-
-
+                        <div className='about-us-grid'>
+                            <img src={twentynine} alt="" />
+                            <p>
+                            মোঃ সহিদুল ইসলাম 
+                            </p>
+                        </div>
 
                     </div>
                 </div>

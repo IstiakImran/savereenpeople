@@ -8,6 +8,7 @@ import twentythree from '/Others/23.jpg'
 import twentyfour from '/Others/24.jpg'
 import twentyfive from '/Others/25.jpg'
 import twentysix from '/Others/26.jpg'
+import thrity from '/Others/30.jpg'
 
 
 const ForeignOfficers = () => {
@@ -86,6 +87,12 @@ const ForeignOfficers = () => {
                             <img src={twentyfive} alt="" />
                             <p>
                                 জারিফ
+                            </p>
+                        </div>
+                        <div className='about-us-grid'>
+                            <img src={thrity} alt="" />
+                            <p>
+                            মোহাম্মদ ইয়াসিন
                             </p>
                         </div>
 
