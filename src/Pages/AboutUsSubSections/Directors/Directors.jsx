@@ -6,38 +6,36 @@ import ikbal from '/Directors/Ikbal.png'
 import salimullah from '/Directors/Salimullah.png'
 import akhtar from '/Directors/Akhtar.png'
 import rowson from '/Directors/Rowson.jpg'
+import ashraful from '/Directors/Ashraful.jpg'
 
 const Directors = () => {
     return (
         <div className='about-us'>
 
-
             <div className='about-us-content'>
-                <h1>Chairperson</h1>
+                <h1>Board of Directors</h1>
                 <div className='about-us-directors'>
-                    <div className='about-us-grid'>
+                <div className='about-us-grid'>
                         <img src={mofazzal} alt="" />
                         <p>
-                            Mofazzal Hossain
+                            MD Mofazzal Hossain
+                        </p>
+                        <p>
+                            <small>
+                                Chairperson
+                            </small>
                         </p>
                     </div>
 
-                </div>
-            </div>
-            <div className='about-us-content'>
-                <h1>Directors</h1>
-                <div className='about-us-directors'>
-
-                    <div className='about-us-grid'>
-                        <img src={akhtar} alt="" />
+                <div className='about-us-grid'>
+                        <img src={ashraful} alt="" />
                         <p>
-                            Akhtar Rizwan
+                            MD. Ashraful Islam
                         </p>
-                    </div>
-                    <div className='about-us-grid'>
-                        <img src={ikbal} alt="" />
                         <p>
-                            MD. Ikbal Hussain
+                            <small>
+                                Managing Director
+                            </small>
                         </p>
                     </div>
                     <div className='about-us-grid'>
@@ -45,25 +43,24 @@ const Directors = () => {
                         <p>
                             Mohammed Salimullah
                         </p>
-                    </div>
+                        <p>
+                            <small>
+                                Finance Director
+                            </small>
+                        </p>
+                    </div>                    
                     <div className='about-us-grid'>
-                        <img src={rowson} alt="" />
+                        <img src={ikbal} alt="" />
                         <p>
-                            MD. Rowson Alom
-                        </p>
-                        <p>
-                            <small style={{ fontSize: "14px", fontWeight: "400", margin: "0" }}>Former Officer in-charge (Retd.)
-                                <br />
-                                Sub-regional center,Jamalpur.
-                                <br />
-                                Bangladesh Open University.</small>
+                            MD. Ikbal Hussain
                         </p>
                     </div>
+                    
+                    
 
 
                 </div>
             </div>
-
 
         </div>
     );

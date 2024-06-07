@@ -12,6 +12,10 @@ import LandHolders from './Pages/AboutUsSubSections/LandHolders/LandHolders';
 import ShareHolders from './Pages/AboutUsSubSections/ShareHolders/ShareHolders';
 import GMs from './Pages/AboutUsSubSections/GMS/GMS';
 import ForeignOfficers from './Pages/AboutUsSubSections/ForeignOfficers/ForeignOfficers';
+import ImportExport from './Pages/AboutUsSubSections/ImportExport/ImportExport';
+import Administration from './Pages/AboutUsSubSections/Administration/Administration';
+import Hr from './Pages/AboutUsSubSections/HR/Hr';
+import AppointedDirectors from './Pages/AboutUsSubSections/AppointedDirectors/AppointedDirectors';
 
 const Route = () => {
     const router = createBrowserRouter([
@@ -40,6 +44,10 @@ const Route = () => {
                             element: <Directors></Directors>
                         },
                         {
+                            path: "/aboutus/appointeddirectors",
+                            element: <AppointedDirectors></AppointedDirectors>
+                        },
+                        {
                             path: "/aboutus/employees",
                             element: <Employees></Employees>
                         },
@@ -58,6 +66,18 @@ const Route = () => {
                         {
                             path: "/aboutus/foreignofficers",
                             element: <ForeignOfficers></ForeignOfficers>
+                        },
+                        {
+                            path: "/aboutus/importexport",
+                            element: <ImportExport></ImportExport>
+                        },
+                        {
+                            path: "/aboutus/administration",
+                            element: <Administration></Administration>
+                        },
+                        {
+                            path: "/aboutus/hr",
+                            element: <Hr></Hr>
                         },
                     ]
                 },

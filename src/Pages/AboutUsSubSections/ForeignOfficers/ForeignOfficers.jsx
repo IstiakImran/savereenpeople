@@ -9,6 +9,7 @@ import twentyfour from '/Others/24.jpg'
 import twentyfive from '/Others/25.jpg'
 import twentysix from '/Others/26.jpg'
 import thrity from '/Others/30.jpg'
+import fourty from '/Others/40.jpg'
 
 
 const ForeignOfficers = () => {
@@ -76,6 +77,13 @@ const ForeignOfficers = () => {
                                 <small style={{ fontSize: "14px", fontWeight: "400", margin: "0" }}>কান্ট্রি ডিরেক্টর অফ বুলগেরিয়া</small>
                             </p>
                         </div>
+                        <div className='about-us-grid'>
+                            <img src={fourty} alt="" />
+                            <p>
+                            পারভেজ হাসান
+                            </p>
+                        </div>
+
                         <div className='about-us-grid'>
                             <img src={twentysix} alt="" />
                             <p>
