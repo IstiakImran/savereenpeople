@@ -7,6 +7,7 @@ import salimullah from '/Directors/Salimullah.png'
 import akhtar from '/Directors/Akhtar.png'
 import rowson from '/Directors/Rowson.jpg'
 import ashraful from '/Directors/Ashraful.jpg'
+import PersonPlaceholder from '/PersonPlaceholder.png';
 
 const Directors = () => {
     return (
@@ -15,10 +16,10 @@ const Directors = () => {
             <div className='about-us-content'>
                 <h1>Board of Directors</h1>
                 <div className='about-us-directors'>
-                <div className='about-us-grid'>
-                        <img src={mofazzal} alt="" />
+                    <div className='about-us-grid'>
+                        <img src={PersonPlaceholder} alt="" />
                         <p>
-                            MD Mofazzal Hossain
+                            M M Hossain
                         </p>
                         <p>
                             <small>
@@ -27,7 +28,7 @@ const Directors = () => {
                         </p>
                     </div>
 
-                <div className='about-us-grid'>
+                    <div className='about-us-grid'>
                         <img src={ashraful} alt="" />
                         <p>
                             MD. Ashraful Islam
@@ -48,15 +49,15 @@ const Directors = () => {
                                 Finance Director
                             </small>
                         </p>
-                    </div>                    
+                    </div>
                     <div className='about-us-grid'>
                         <img src={ikbal} alt="" />
                         <p>
                             MD. Ikbal Hussain
                         </p>
                     </div>
-                    
-                    
+
+
 
 
                 </div>

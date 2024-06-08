@@ -1,156 +1,102 @@
-
-import React from 'react';
+import React, { useState } from 'react';
 import "./GMS.css";
-
-import twentyeight from '/Others/28.jpg'
-import twentynine from '/Others/29.jpg'
-import six from '/Others/6.jpg'
-import thirtyone from '/Others/31.jpg'
-import thirtytwo from '/Others/32.jpg'
-import thirtythree from '/Others/33.jpg'
-import thirtyfive from '/Others/35.jpg'
-import thirtysix from '/Others/36.jpg'
-import thirtyseven from '/Others/37.jpg'
-
+import managersData from './managersData';
+import PersonPlaceholder from '/PersonPlaceholder.png';
 
 const GMs = () => {
+    const [selectedDivision, setSelectedDivision] = useState(null);
+    const [selectedZilla, setSelectedZilla] = useState(null);
+    const [selectedThana, setSelectedThana] = useState(null);
+
+    const handleDivisionClick = (division) => {
+        setSelectedDivision(division === selectedDivision ? null : division);
+        setSelectedZilla(null);
+        setSelectedThana(null);
+    };
+
+    const handleZillaClick = (zilla) => {
+        setSelectedZilla(zilla === selectedZilla ? null : zilla);
+        setSelectedThana(null);
+    };
+
+    const handleThanaClick = (thana) => {
+        setSelectedThana(thana === selectedThana ? null : thana);
+    };
+
     return (
         <div className='about-us'>
-
-            <div className='about-us-content'>
-                <h1>AGM</h1>
+            {!selectedDivision && (
                 <div className='about-us-content'>
-                    <h1>ঢাকা</h1>
-                    <div className='about-us-directors'>
-                        <div className='about-us-grid'>
-                            <img src={twentyeight} alt="" />
-                            <p>
-                                মোহাম্মদ মকবুল হোসেন
-                            </p>
+                    <h1>AGM</h1>
+                    {Object.keys(managersData).map((division) => (
+                        <div key={division} className='about-us-section'>
+                            <h2 onClick={() => handleDivisionClick(division)}>{division}</h2>
                         </div>
-                        <div className='about-us-grid'>
-                            <img src={twentynine} alt="" />
-                            <p>
-                            মোঃ সহিদুল ইসলাম 
-                            </p>
-                        </div>
-
-
-
-                    </div>
+                    ))}
                 </div>
+            )}
 
+            {selectedDivision && !selectedZilla && !selectedThana && (
                 <div className='about-us-content'>
-                    <h1>রাজশাহী-১</h1>
+                    <button onClick={() => setSelectedDivision(null)}>Back to Divisions</button>
+                    <h1>{selectedDivision}</h1>
+                    <h3>AGM</h3>
                     <div className='about-us-directors'>
-                        <div className='about-us-grid'>
-                            <img src={thirtytwo} alt="" />
-                            <p>
-                            মোহাম্মদ সিরাজুল ইসলাম
-                            </p>
+                        {managersData[selectedDivision].AGM.map((agm, index) => (
+                            <div key={index} className='about-us-grid'>
+                                <img src={agm.image || PersonPlaceholder} alt={agm.name} />
+                                <p>{agm.name}</p>
+                            </div>
+                        ))}
+                    </div>
+                    <h3>Zilla Managers</h3>
+                    {Object.keys(managersData[selectedDivision]['Zilla Managers']).map((zilla) => (
+                        <div key={zilla} className='about-us-grid'>
+                            <button onClick={() => handleZillaClick(zilla)}>{zilla}</button>
                         </div>
-
-                    </div>
+                    ))}
                 </div>
+            )}
 
+            {selectedDivision && selectedZilla && !selectedThana && (
                 <div className='about-us-content'>
-                    <h1>রাজশাহী-২</h1>
+                    <button onClick={() => setSelectedZilla(null)}>Back to Zillas</button>
+                    <h1>{selectedZilla}</h1>
+                    <h3>Zilla Manager</h3>
                     <div className='about-us-directors'>
-                        <div className='about-us-grid'>
-                            <img src={thirtysix} alt="" />
-                            <p>
-                            মোঃ সোহেল রানা
-                            </p>
+                        {managersData[selectedDivision]['Zilla Managers'][selectedZilla]['Zilla Manager'] ? (
+                            <div className='about-us-grid'>
+                                <img src={managersData[selectedDivision]['Zilla Managers'][selectedZilla]['Zilla Manager'].image || PersonPlaceholder} alt={managersData[selectedDivision]['Zilla Managers'][selectedZilla]['Zilla Manager'].name} />
+                                <p>{managersData[selectedDivision]['Zilla Managers'][selectedZilla]['Zilla Manager'].name}</p>
+                            </div>
+                        ) : (
+                            <p>No Zilla Manager available</p>
+                        )}
+                    </div>
+                    <h3>Thana Managers</h3>
+                    {managersData[selectedDivision]['Zilla Managers'][selectedZilla]['Thana Managers'].map((thana, index) => (
+                        <div key={index} className='about-us-grid'>
+                            <button onClick={() => handleThanaClick(thana)}>{thana.thana}</button>
                         </div>
-
-                    </div>
+                    ))}
                 </div>
+            )}
 
+            {selectedThana && (
                 <div className='about-us-content'>
-                    <h1>খুলনা</h1>
-                    <div className='about-us-directors'>
-                    <div className='about-us-grid'>
-                        <img src={six} alt="" />
-                        <p>
-                            মোহাম্মদ মাফিকুল ইসলাম
-                        </p>
-                    </div>
-
-                    </div>
-                </div>
-                <div className='about-us-content'>
-                    <h1>ময়মনসিংহ</h1>
-                    <div className='about-us-directors'>
-                    <div className='about-us-grid'>
-                            <img src={twentyeight} alt="" />
-                            <p>
-                                মোহাম্মদ মকবুল হোসেন
-                            </p>
-                        </div>
-                        <div className='about-us-grid'>
-                            <img src={twentynine} alt="" />
-                            <p>
-                            মোঃ সহিদুল ইসলাম 
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div className='about-us-content'>
-                    <h1>বগুড়া</h1>
-                    <div className='about-us-directors'>
-                    <div className='about-us-grid'>
-                            <img src={thirtyone} alt="" />
-                            <p>
-                            মোহাম্মদ রবিউল ইসলাম 
-                            </p>
+                    <button onClick={() => setSelectedThana(null)}>Back to Thanas</button>
+                    <div className='about-us-section'>
+                        <h3>Thana Managers</h3>
+                        <div className='about-us-directors'>
+                            <h3>{selectedThana.thana}</h3>
+                            <div className='about-us-grid'>
+                                <img src={selectedThana.image || PersonPlaceholder} alt={selectedThana.name} />
+                                <p>{selectedThana.name}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div className='about-us-content'>
-                    <h1>ফরিয়াদপুর</h1>
-                    <div className='about-us-directors'>
-                        <div className='about-us-grid'>
-                            <img src={thirtyfive} alt="" />
-                            <p>
-                            মোহাম্মদ আবুল কালাম আজাদ
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div className='about-us-content'>
-                    <h1>রংপুর</h1>
-                    <div className='about-us-directors'>
-                        <div className='about-us-grid'>
-                            <img src={thirtythree} alt="" />
-                            <p>
-                            মোহাম্মদ বাইজিদ আলম 
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div className='about-us-content'>
-                    <h1>চট্টগ্রাম</h1>
-                    <div className='about-us-directors'>
-                        <div className='about-us-grid'>
-                            <img src={thirtyseven} alt="" />
-                            <p>
-                            এ.বি.এম. নাদিম আলম 
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-               
-
-            </div>
-
+            )}
         </div>
     );
 };

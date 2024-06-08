@@ -10,6 +10,7 @@ import twentyfive from '/Others/25.jpg'
 import twentysix from '/Others/26.jpg'
 import thrity from '/Others/30.jpg'
 import fourty from '/Others/40.jpg'
+import fortyseven from '/Others/47.jpg';
 
 
 const ForeignOfficers = () => {
@@ -40,6 +41,18 @@ const ForeignOfficers = () => {
                 <div className='about-us-content'>
                     <h1>দুবাই</h1>
                     <div className='about-us-directors'>
+                        <div className='about-us-grid'>
+                            <img src={fortyseven} alt="" />
+                            <p>
+                                মোহাম্মদ শেখ সাজেদুল ইসলাম সাজ্জাদ
+                            </p>
+                            <p>
+                                <small>
+                                    কান্ট্রি ডিরেক্টর
+                                </small>
+                            </p>
+                        </div>
+
                         <div className='about-us-grid'>
                             <img src={nineteen} alt="" />
                             <p>
@@ -80,7 +93,7 @@ const ForeignOfficers = () => {
                         <div className='about-us-grid'>
                             <img src={fourty} alt="" />
                             <p>
-                            পারভেজ হাসান
+                                পারভেজ হাসান
                             </p>
                         </div>
 
@@ -100,7 +113,7 @@ const ForeignOfficers = () => {
                         <div className='about-us-grid'>
                             <img src={thrity} alt="" />
                             <p>
-                            মোহাম্মদ ইয়াসিন
+                                মোহাম্মদ ইয়াসিন
                             </p>
                         </div>
 
