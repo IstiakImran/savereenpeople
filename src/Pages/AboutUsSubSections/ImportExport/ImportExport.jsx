@@ -1,7 +1,7 @@
 
 import React from 'react';
 import "./ImportExport.css";
-
+import PersonPlaceholder from '/PersonPlaceholder.png';
 import eight from '/Others/8.jpg'
 
 const ImportExport = () => {
@@ -16,9 +16,9 @@ const ImportExport = () => {
                     <h1> Department Head</h1>
                     <div className='about-us-directors'>
                         <div className='about-us-grid'>
-                            <img src={eight} alt="" />
+                            <img src={PersonPlaceholder} alt="" />
                             <p>
-                            মোঃ সুলতান আহমেদ 
+                                মোঃ সুলতান আহমেদ
                             </p>
                         </div>
 

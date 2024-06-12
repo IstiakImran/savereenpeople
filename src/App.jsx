@@ -26,7 +26,17 @@ const App = () => {
             <Link to="/ourprojects" className="btn btn-secondary">
               Our Projects
             </Link>
+            <br />
+            <p className="btn-red">
+              RJS C. -184213/2022
+            </p>
+            <br />
+            <p className="btn-red">
+              RL No: 2323
+            </p>
+
           </div>
+
         </section>
 
         <section className="about">

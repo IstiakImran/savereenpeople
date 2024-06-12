@@ -1,6 +1,6 @@
 import React from 'react';
 import "./ShareHolders.css";
-
+import PersonPlaceholder from '/PersonPlaceholder.png';
 import five from '/Others/5.jpg'
 import eight from '/Others/8.jpg'
 import nine from '/Others/9.jpg'
@@ -10,9 +10,7 @@ import twelve from '/Others/12.jpg'
 import thirteen from '/Others/13.jpg'
 import fourteen from '/Others/14.jpg'
 import sixteen from '/Others/16.png'
-
-
-
+import fortyseven from '/Others/47.jpg'
 
 
 const ShareHolders = () => {
@@ -48,7 +46,7 @@ const ShareHolders = () => {
                         </p>
                     </div>
                     <div className='about-us-grid'>
-                        <img src={eight} alt="" />
+                        <img src={PersonPlaceholder} alt="" />
                         <p>
                             সুলতান
                         </p>
@@ -75,6 +73,12 @@ const ShareHolders = () => {
                         <img src={sixteen} alt="" />
                         <p>
                             মোহাম্মদ ইউনুস হাসান
+                        </p>
+                    </div>
+                    <div className='about-us-grid'>
+                        <img src={fortyseven} alt="" />
+                        <p>
+                            সাজেদুল ইসলাম সাজ্জাদ
                         </p>
                     </div>
 

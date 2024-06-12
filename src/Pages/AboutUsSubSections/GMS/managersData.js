@@ -1,3 +1,4 @@
+import PersonPlaceholder from '/PersonPlaceholder.png';
 import twentyeight from '/Others/28.jpg';
 import twentynine from '/Others/29.jpg';
 import six from '/Others/6.jpg';
@@ -14,6 +15,14 @@ import fortyfour from '/Others/44.jpg';
 import fortyfive from '/Others/45.jpg';
 import fourtysix from '/Others/46.jpg';
 import fortyeight from '/Others/48.jpg';
+import fortynine from '/Others/49.jpg';
+import fifty from '/Others/50.jpg';
+import fiftyone from '/Others/51.jpg';
+import fiftytwo from '/Others/52.jpg';
+import fiftythree from '/Others/53.jpg';
+import fiftyfour from '/Others/54.jpg';
+
+
 
 const managersData = {
     "ঢাকা": {
@@ -25,7 +34,7 @@ const managersData = {
             "Dhaka": {
                 "Zilla Manager": { name: "Dhaka Zilla Manager", image: "" },
                 "Thana Managers": [
-                    { thana: "মোহাম্মদপুর", name: "মাসুম পারভেজ", image: fourtysix },
+                    { name: "Dhaka Thana Manager", image: "" }
                 ]
             }
         }
@@ -35,10 +44,28 @@ const managersData = {
             { name: "মোহাম্মদ সিরাজুল ইসলাম", image: thirtytwo }
         ],
         "Zilla Managers": {
-            "Rajshahi": {
-                "Zilla Manager": { name: "Rajshahi Zilla Manager", image: "" },
+            "জয়পুরহাট": {
+                "Zilla Manager": { name: "মোঃ রাকিব হাসান", image: fiftyone },
                 "Thana Managers": [
-                    { name: "Boalia Thana Manager", image: "" }
+                    { name: "জয়পুরহাট Thana Manager", image: "" }
+                ]
+            },
+            'চাঁপাইনবাবগঞ্জ': {
+                "Zilla Manager": { name: "সাজেদুর রহমান", image: fiftythree },
+                "Thana Managers": [
+                    { name: "জয়পুরহাট Thana Manager", image: "" }
+                ]
+            },
+            'পাবনা': {
+                "Zilla Manager": { name: "ইকবাল হাসান", image: fifty },
+                "Thana Managers": [
+                    { name: "জয়পুরহাট Thana Manager", image: "" }
+                ]
+            },
+            'নাটোর': {
+                "Zilla Manager": { name: "মোহাম্মদ আজিজুর রহমান", image: fortynine },
+                "Thana Managers": [
+                    { name: "জয়পুরহাট Thana Manager", image: "" }
                 ]
             }
         }
@@ -65,7 +92,8 @@ const managersData = {
                 "Zilla Manager": { name: "খাইরুল আলম", image: fortyfive },
                 "Thana Managers": [
                     { thana: "শালিকা থানা", name: "মোহাম্মদ খুরশিদ আলম", image: fortyfour },
-                    { thana: "শ্রীপুর থানা", name: "ওমর ফারুক", image: fortyeight }
+                    { thana: "শ্রীপুর থানা", name: "ওমর ফারুক", image: fortyeight },
+                    { thana: "মোহাম্মদপুর", name: "মাসুম পারভেজ", image: fourtysix },
                 ]
             }
         }
@@ -89,10 +117,10 @@ const managersData = {
             { name: "মোঃ সহিদুল ইসলাম", image: twentynine }
         ],
         "Zilla Managers": {
-            "Mymensingh": {
-                "Zilla Manager": { name: "Mymensingh Zilla Manager", image: "" },
+            "জামালপুর": {
+                "Zilla Manager": { name: "আমিনুল ইসলাম", image: fiftytwo },
                 "Thana Managers": [
-                    { name: "Muktagachha Thana Manager", image: "" }
+                    { name: "Pahartali Thana Manager", image: "" }
                 ]
             }
         }
@@ -102,8 +130,8 @@ const managersData = {
             { name: "মোহাম্মদ রবিউল ইসলাম", image: thirtyone }
         ],
         "Zilla Managers": {
-            "Bogura": {
-                "Zilla Manager": { name: "Bogura Zilla Manager", image: "" },
+            "বগুড়া": {
+                "Zilla Manager": { name: "মোহাম্মদ শরিফুল ইসলাম", image: fiftyfour },
                 "Thana Managers": [
                     { name: "Sherpur Thana Manager", image: "" }
                 ]

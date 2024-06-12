@@ -58,6 +58,19 @@
     font-size: 16px;
     font-weight: bold;
 }
+.btn-red {
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 10px;
+  margin: 10px;
+  color: white;
+  background-color: #f01060;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
 
 .btn:hover {
     transform: translateY(-3px);
