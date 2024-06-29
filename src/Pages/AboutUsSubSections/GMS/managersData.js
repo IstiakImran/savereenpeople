@@ -85,7 +85,7 @@ const managersData = {
     },
     "খুলনা-১": {
         "AGM": [
-            { name: "মোহাম্মদ মাফিকুল ইসলাম", image: six }
+            { name: "মোহাম্মদ মাফিকুল ইসলাম", image: PersonPlaceholder }
         ],
         "Zilla Managers": {
             "মাগুরা": {
@@ -131,7 +131,7 @@ const managersData = {
         ],
         "Zilla Managers": {
             "বগুড়া": {
-                "Zilla Manager": { name: "মোহাম্মদ শরিফুল ইসলাম", image: fiftyfour },
+                "Zilla Manager": { name: "মোহাম্মদ শহীদুল ইসলাম", image: fiftyfour },
                 "Thana Managers": [
                     { name: "Sherpur Thana Manager", image: "" }
                 ]
